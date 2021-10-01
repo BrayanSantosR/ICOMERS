@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>COMICS</title>
+</head>
+
+<body>
+    <header class="container-fluid position-sticky top-0 bg-dark text-white">
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+            
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">PRODUCTOS</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">REGISTRO</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="tab-content" id="pills-tabContent">
+       
+        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+            <h1 class="h4 m-4 text-primary text-center">Bienvenido a ICOMERS</h1>
+            <div class="h4 m-2 text-primary text-center bg-dark">
+            <img src="/images/leo.jpg" class="h4 m-4 text-primary text-center">
+            </div>
+            <h3 class="h4 m-2 text-primary text-center" >Disponemos de las siguientes categorias para su entretenimiento:</h3><br><br>
+            <div  class="h4 m-2 text-primary text-center bg-dark">
+            <button id="categoria1" class="categoria"style="background-color: dodgerblue; width: 50%;"><h1>Categoria   Star Wars</h1></button><br><br>
+            <button id="categoria2" class="categoria"style="background-color:red; width: 50%;"><h1>Categoria    Marvel   </h1></button></div>
+
+            
+        </div>
+
+        <br>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            
+
+            <div class="contenedor-Formulario">
+                <div class="content">
+                   
+                    <form action="" class="form" id="form" onsubmit=""><!--functionSubmit(event)-->
+                        <h2>FORMULARIO DE REGISTRO</h2>
+                        <input id="inputName" type="text" placeholder="Ingrese su Nombre" required >
+                        <input id="inputApellido" type="text" placeholder="Ingrese su apellido" required >
+                        <input id="inputTelefono" type="number" placeholder="Ingrese numero telefonico" required >
+                        <input id="email" type="Email" name="email" placeholder="Enter email" required>
+                        <select name="gender" id="gender" value="Gender">
+                            <option value="0">Gender</option>
+                            <option value="F">Female</option>
+                            <option value="M">Male</option>
+                            <option value="O">Other</option>
+                        </select>
+                        <label for="">Observaciones:</label>
+                        <textarea id="msm" cols="30" rows="10" ></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+             </div>
+    
+    <footer class="bg-dark p-3 mt-5">
+        <p class="text-center m-0 text-muted">Academia Geek </p>
+    </footer>
+
+    <!-- Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./script/script1.js" type="module"></script>
+    
+</body>
+
+</html>
